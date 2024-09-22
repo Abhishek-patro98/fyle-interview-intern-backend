@@ -15,9 +15,9 @@ from core.models.principals import Principal
 
 # revision identifiers, used by Alembic.
 revision = '52a401750a76'
-down_revision = '2087a1db8595'
-branch_labels = None
-depends_on = None
+down_revision = '2087a1db8595' 
+branch_labels = None 
+depends_on = None     
 
 
 def upgrade():
