@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile  # Specify the Dockerfile to use
+    ports:
+      - "8000:7755"  # Map host port 8000 to container port 8000
+    environment:
+      FLASK_ENV: development  # Set Flask environment to development
+    volumes:
+      - .:/app  # Mount current directory to /app in the container (for live updates during development)
+    command: ["bash", "run.sh"]  # Command to run your application
+
+ 
